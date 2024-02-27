@@ -1,12 +1,12 @@
 import { useState } from "react";
-
-export default function Message(props){
+//Using arrow function as a component
+ const Message=(props)=>{
   const uname = "Manoj";
-  return <h1>Hi I am {uname} {props.greet} {props.exc}</h1>;
+  return (<><h1>Hi I am {uname} {props.greet} {props.exc}</h1> <hr/></>);
 }
 
-export function MyButton() {
-  return <button  style={{backgroundColor:"purple"}}>I'm a button</button>;
+ export function MyButton() {
+  return <><button  style={{backgroundColor:"purple"}}>I'm a button</button><hr/></>;
 }
 const lists = ["Manoj", "Kumar", "Magadheeran", "Vasantha"];
 const items = lists.map((item, index) => (
@@ -19,15 +19,15 @@ const items = lists.map((item, index) => (
     {item}
   </li>
 ));
-export function ListGroup() {
+ export function ListGroup() {
   return (
     <>
       <h1>List items</h1>
-      <ul class="list-group">{items}</ul>
+      <ul className="list-group">{items}</ul>
     </>
   );
   }
-export function Hook(){
+ export function Hook(){
   const [name,setName]=useState("Manoj")
   return(
     <>
@@ -39,3 +39,4 @@ export function Hook(){
     
   
 }
+export default Message;
