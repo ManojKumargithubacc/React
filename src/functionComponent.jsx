@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Fragment } from "react";
 //Using arrow function as a component
  const Message=(props)=>{
   const uname = "Manoj";
@@ -19,24 +20,34 @@ const items = lists.map((item, index) => (
     {item}
   </li>
 ));
- export function ListGroup() {
+ export function ListGroup(props) {
   return (
     <>
       <h1>List items</h1>
       <ul className="list-group">{items}</ul>
+      {props.children}
     </>
   );
   }
  export function Hook(){
   const [name,setName]=useState("Manoj")
   return(
-    <>
+    <Fragment>
     <p>{name}</p>
     <button onClick={()=>setName("Kumar")}> Click </button>
-    </>
+    </Fragment>
 
-  );
-    
-  
+  );  
 }
-export default Message;
+export default Message
+
+// export function ReactCreate(){
+  // return(
+    // React.createElement('div',{id:'hello'},React.createElement('h1',null,'Manoj'),React.createElement('p',null,'Manoj is using react createElement'))
+    // 
+    // React.createElement('h1',null,'Manoj'),
+    // React.createElement('p',null,'Manoj is using react createElement')
+  // 
+// 
+  // )
+// }

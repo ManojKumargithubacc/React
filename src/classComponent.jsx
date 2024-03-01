@@ -23,7 +23,29 @@ export class Welcome extends Component {
     }
   }
 
-
+export class New extends Component {
+render(){
+    return(
+        <h1></h1>
+    )
+}
+}
+export class Statechange extends Component{
+    constructor(){
+        super()
+        this.state={
+            message:"I am using the state"
+        }
+    }
+render(){
+    return(
+        <>
+        <h1>{this.state.message}</h1>
+        <button onClick={()=>this.setState({message:"State is changed"})}>Submit</button>
+        </>
+    )
+}
+}
 
 
 
