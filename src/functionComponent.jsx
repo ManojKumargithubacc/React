@@ -45,9 +45,8 @@ export default Message
   // return(
     // React.createElement('div',{id:'hello'},React.createElement('h1',null,'Manoj'),React.createElement('p',null,'Manoj is using react createElement'))
     // 
-    // React.createElement('h1',null,'Manoj'),
-    // React.createElement('p',null,'Manoj is using react createElement')
   // 
 // 
   // )
 // }
+ 
