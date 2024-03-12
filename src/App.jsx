@@ -12,6 +12,8 @@ import { ReactCreate } from "./functionComponent";
 import MemoHook from "./Hooks/memoHook";
 import GrandParent from "./Context/grandParent";
 import ContextHook from "./Hooks/contexthook/contextHookgrandparent";
+import RefsDemo from "./refsDemo";
+import ForwardingRefsParent from "./ForwardingRefsParent";
 export default function App(){
   return (
   <>
@@ -35,7 +37,9 @@ export default function App(){
 {/* <ReactCreate/> */}
 {/* <MemoHook/> */}
 {/* <GrandParent/> */}
-<ContextHook/>
+{/* <ContextHook/> */}
+{/* <RefsDemo/> */}
+<ForwardingRefsParent/>
   </>
   )
   }
