@@ -2,14 +2,16 @@ import Message,{ListGroup,Hook,MyButton} from "./functionComponent";
 import Demo,{Statechange, Welcome} from "./classComponent";
 import { Forms } from "./forms";
 import { Counter } from "./counter";
-import Count, { Count2, Obj } from "./stateHook";
+import Count, { Count2, Obj } from "./Hooks/stateHook";
 import TodoApp from "./Todolist";
 import LifeCycleMethods from "./lifeCycleMethods";
-import EffectHook from "./effectHook";
-import { EffectHookMouse } from "./effectHook";
-import { EffectHookTimer } from "./effectHook";
+import EffectHook from "./Hooks/effectHook";
+import { EffectHookMouse } from "./Hooks/effectHook";
+import { EffectHookTimer } from "./Hooks/effectHook";
 import { ReactCreate } from "./functionComponent";
-import ReduxReact from "../redux-react/src/reduxReact";
+import MemoHook from "./Hooks/memoHook";
+import GrandParent from "./Context/grandParent";
+import ContextHook from "./Hooks/contexthook/contextHookgrandparent";
 export default function App(){
   return (
   <>
@@ -31,7 +33,9 @@ export default function App(){
 {/* <EffectHookMouse/> */}
 {/* <EffectHookTimer/> */}
 {/* <ReactCreate/> */}
-<ReduxReact/>
+{/* <MemoHook/> */}
+{/* <GrandParent/> */}
+<ContextHook/>
   </>
   )
   }
