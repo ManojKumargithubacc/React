@@ -1,6 +1,6 @@
-import { Buy_cake } from "./actionTypes"
+import { BUYCAKE } from "./actionTypes"
 export default function Buycake(){
     return{
-        type:Buy_cake
+        type:BUYCAKE
     }
 }
